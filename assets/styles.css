@@ -1,0 +1,125 @@
+/* assets/styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #ffd700;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #ffd700;
+}
+
+.clock, .timer, .stopwatch, .alarm {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.clock:hover, .timer:hover, .stopwatch:hover, .alarm:hover {
+    transform: translateY(-5px);
+}
+
+#clock-display, #timer-display, #stopwatch-display {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+}
+
+input[type="number"], input[type="time"], input[type="text"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+button {
+    width: calc(50% - 0.5rem);
+    padding: 0.8rem;
+    margin: 0.5rem 0.25rem;
+    border: none;
+    border-radius: 6px;
+    background: #ff7f50;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #ff6347;
+}
+
+#stopwatch-lap {
+    width: calc(100% - 0.5rem);
+    background: #48d1cc;
+}
+
+#stopwatch-lap:hover {
+    background: #20b2aa;
+}
+
+#lap-list, #alarm-list {
+    margin-top: 1rem;
+    list-style: none;
+}
+
+#lap-list li, #alarm-list li {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+#lap-list li {
+    color: #add8e6;
+}
+
+#alarm-list li {
+    color: #ffa07a;
+}
